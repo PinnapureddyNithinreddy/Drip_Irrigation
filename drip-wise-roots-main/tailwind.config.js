@@ -4,8 +4,13 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  safelist: [
+    {
+      pattern: /.*/, // 🔥 include ALL classes (temporary fix)
+    },
+  ],
   theme: {
     extend: {},
   },
   plugins: [],
-};
+}
